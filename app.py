@@ -10,14 +10,14 @@ from curses import wrapper,nocbreak,echo,curs_set,endwin
 
 channel = 'chat-channel'
 pnconfig = PNConfiguration()
-name_dict={"br4v3h3r0":0,"d3f4lt":0}
-name="d3f4lt"
+name_dict={"br4v3h3r0":0,"superhero":0} # ADD NAMES OF ALL PERMANENT MEMBERS OF CHAT HERE
+
+name="superhero"        # SET YOUR name AS YOUR USERNAME FROM ABOVE LIST
 # name="br4v3h3r0"
 
-pnconfig.publish_key = 'pub-c-ae561d9b-3c28-41e2-ac4d-666b1241e06e'
-pnconfig.subscribe_key = 'sub-c-132930fe-4094-11eb-a233-facb2062b65c'
-# pnconfig.publish_key='demo'
-# pnconfig.subscribe_key='demo'
+pnconfig.publish_key='demo'    # ENTER YOUR KEYS HERE
+pnconfig.subscribe_key='demo'
+
 pubnub = PubNub(pnconfig)
 new_messages = []
 ui = ""
