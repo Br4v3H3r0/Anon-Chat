@@ -11,11 +11,13 @@ from time import sleep
 
 channel = 'chat-channel'
 pnconfig = PNConfiguration()
-name_dict={"king":0,"queen":0}
+name_dict={"br4v3h3r0":0,"superhero":0} # NAMES OF ALL PERMANENT MEMBERS OF CHAT HERE
+
 name=""       
 
-pnconfig.publish_key='demo'
+pnconfig.publish_key='demo'    # YOUR KEYS HERE
 pnconfig.subscribe_key='demo'
+
 pubnub = PubNub(pnconfig)
 new_messages = []
 ui = ""

@@ -13,15 +13,21 @@ You can also randomise the data inside encrypt.py using a script which i will up
 Signup - https://dashboard.pubnub.com/signup
 Admin Dashboard - https://dashboard.pubnub.com/login
 
-Also use the command - pip3 install -r requirements.txt to install the dependencies
+Also use the command - 
+```
+pip3 install pubnub==4.1.6 
+```
+to install the pubnub dependencies
 
-2) Note down your keys and enter them in line number 18,19 of app.py
+2) Note down your keys and run 
+```
+python3 configure.py
+```
+and follow the configuration wizard.
 
-3) Enter the names of the permanent members of your team as a dictionary entry in line number 13 of app.py
+3) Distribute the package to your team members
 
-4) Distribute the package to your team members
-
-5) Set your name as one of the names present in the dictionary in line 15 of app.py and tell your members to do the same.
+5) Choose your name as one of the names present in the dictionary of app.py and tell your members to do the same.
 
 6) You're all set!! Run python3 app.py and invite all the members for a private chat!
 
@@ -32,4 +38,4 @@ You can also use pyinstaller or pyexe to close source the program. I will upload
 
 Feel free to customise the ui inside ui.py and add colors to it. I will do that soon once i get time :)
 
-I know the above steps are cumbersome, i will include a script to make it automatic and user-friendly, so stay tuned ;) and enjoy! 
+ 
